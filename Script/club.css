@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(image/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 1900px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #8d3ce9;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.profile-section {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-section img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.profile-section .username {
+    color: white;
+    font-weight: bold;
+}
+
+.profile-section .sign-in {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #6d1da2;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.profile-section .sign-in:hover {
+    background-color: #555;
+}
+
+main {
+    padding: 20px;
+}
+
+.club-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.club {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.club h2 {
+    color: #8d3ce9;
+}
+
+.club p {
+    font-size: 16px;
+}
+
+button {
+    background-color: #8d3ce9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #6d1da2;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

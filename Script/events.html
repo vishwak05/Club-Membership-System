@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="events.css">
+</head>
+<body>
+    <header>
+        <h1>Events</h1>
+    </header>
+    <section id="technical-events">
+        <h2>Technical Events</h2>
+        <ul>
+            <li>
+                <h3>Coding Competition</h3>
+                <p>Date: July 5, 2024</p>
+                <p>Description: A thrilling competition where students can showcase their coding skills in various programming languages. Winners will receive exciting prizes and certificates.</p>
+            </li>
+            <li>
+                <h3>Debugging Workshop</h3>
+                <p>Date: July 10, 2024</p>
+                <p>Description: A hands-on workshop focused on debugging techniques and tools. Learn how to identify and fix bugs effectively in your code.</p>
+            </li>
+            <li>
+                <h3>Hackathon</h3>
+                <p>Date: July 15, 2024</p>
+                <p>Description: A 24-hour hackathon where students can collaborate in teams to develop innovative projects. Prizes will be awarded to the best projects.</p>
+            </li>
+            <li>
+                <h3>Artificial Intelligence Seminar</h3>
+                <p>Date: July 20, 2024</p>
+                <p>Description: An informative seminar on the latest advancements in artificial intelligence, featuring guest speakers from the industry.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="non-technical-events">
+        <h2>Non-Technical Events</h2>
+        <ul>
+            <li>
+                <h3>Writing Competition</h3>
+                <p>Date: August 1, 2024</p>
+                <p>Description: A competition for aspiring writers to showcase their creativity and writing skills. Participants can submit essays, stories, or poems.</p>
+            </li>
+            <li>
+                <h3>Photography Contest</h3>
+                <p>Date: August 5, 2024</p>
+                <p>Description: Capture the beauty of the campus and surrounding areas in this photography contest. Top entries will be displayed in an exhibition.</p>
+            </li>
+            <li>
+                <h3>Article Writing Workshop</h3>
+                <p>Date: August 10, 2024</p>
+                <p>Description: Learn the art of article writing in this workshop, covering topics like research, structure, and style. Perfect for budding journalists.</p>
+            </li>
+            <li>
+                <h3>Drama Club Performance</h3>
+                <p>Date: August 15, 2024</p>
+                <p>Description: Enjoy a theatrical performance by the college's drama club, featuring a classic play adapted for modern audiences.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="social-events">
+        <h2>Social Events</h2>
+        <ul>
+            <li>
+                <h3>Rally for Environmental Awareness</h3>
+                <p>Date: September 1, 2024</p>
+                <p>Description: Join the rally to promote environmental awareness and sustainability practices. Participants will march through the city with banners and slogans.</p>
+            </li>
+            <li>
+                <h3>Community Volunteering</h3>
+                <p>Date: September 5, 2024</p>
+                <p>Description: Volunteer for various community projects, including cleaning public spaces, planting trees, and helping local charities.</p>
+            </li>
+            <li>
+                <h3>College Tour</h3>
+                <p>Date: September 10, 2024</p>
+                <p>Description: New students and their families are invited to a guided tour of the college campus, followed by a welcome session with faculty and staff.</p>
+            </li>
+            <li>
+                <h3>Inter-College Cultural Fest</h3>
+                <p>Date: September 15, 2024</p>
+                <p>Description: A grand cultural fest where students from different colleges come together to celebrate diversity with music, dance, and food festivals.</p>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Student Clubs. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling to event categories
+        document.addEventListener('DOMContentLoaded', function () {
+            const links = document.querySelectorAll('nav a.dropbtn');
+            const sections = document.querySelectorAll('section');
+
+            links.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+
+                    window.scrollTo({
+                        top: targetSection.offsetTop,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

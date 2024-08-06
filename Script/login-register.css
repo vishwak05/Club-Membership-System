@@ -1,0 +1,78 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Subtle gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: flex-center;
+    height: 125vh;
+    margin: 0;
+    color: white;
+    padding-top: 50px;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    background: white;
+    color: #333;
+}
+
+button[type="submit"],
+button {
+    background-color: #8d3ce9;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover,
+button:hover {
+    background-color: #6d1da2;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Student Club Membership System</title>
+    <link rel="stylesheet" href="login-register.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Student Club Membership</h1>
+        <form class="form" id="register-form">
+            <h2>Register</h2>
+            <div class="form-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            <div class="form-group">
+                <label for="register-username">Username:</label>
+                <input type="text" id="register-username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="phone-number">Phone Number:</label>
+                <input type="text" id="phone-number" name="phone-number" required>
+            </div>
+            <div class="form-group">
+                <label for="register-email">Email Address:</label>
+                <input type="email" id="register-email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="register-password">Password:</label>
+                <input type="password" id="register-password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="retype-password">Retype Password:</label>
+                <input type="password" id="retype-password" name="retype-password" required>
+            </div>
+            <div class="form-group">
+                <label for="club">Choose Club:</label>
+                <select id="club" name="club">
+                    <option value="coding">Coding Club</option>
+                    <option value="dancing">Dancing Club</option>
+                    <option value="singing">Singing Club</option>
+                    <option value="nss">NSS Club</option>
+                    <option value="ncc">NCC Club</option>
+                </select>
+            </div>
+            <button type="submit" onclick="location.href='index.html'"><a href="index.html" style="color:aliceblue">Register</a></button>
+        </form>
+        <p>Already have an account? <button onclick="location.href='login.html'">Login</button></p>
+    </div>
+</body>
+</html>
